@@ -2,6 +2,7 @@ package com.it_academy.tests.ui.parallel_browsers.remote;
 
 import com.it_academy.onliner.driver.WebDriverFactoryStaticThreadRemote;
 import com.it_academy.onliner.pageobject.OnlinerHomePage;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -15,7 +16,7 @@ import static com.it_academy.onliner.pageobject.OnlinerHomePage.getOnlinerUrl;
 
 public class OnlinerCatalogRemoteParallelTest {
     private final OnlinerHomePage onlinerHomePage = new OnlinerHomePage();
-
+    @Disabled
     @ParameterizedTest
     @CsvSource(value = {"chrome", "edge", "firefox"})
     public void testOnlinerCatalogContainsSpecificSectionChrome(String browser) {

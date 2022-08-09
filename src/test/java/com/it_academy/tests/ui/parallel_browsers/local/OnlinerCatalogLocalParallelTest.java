@@ -4,6 +4,7 @@ import com.codeborne.selenide.junit5.SoftAssertsExtension;
 import com.it_academy.tests.listeners.AllureListener;
 import com.it_academy.onliner.pageobject.OnlinerHomePage;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;
@@ -23,7 +24,7 @@ import static com.it_academy.onliner.pageobject.OnlinerHomePage.getOnlinerUrl;
 
 public class OnlinerCatalogLocalParallelTest {
     private final OnlinerHomePage onlinerHomePage = new OnlinerHomePage();
-
+    @Disabled
     @ParameterizedTest
     @CsvSource(value = {"chrome", "edge", "firefox"})
     public void testOnlinerCatalogCompAndNetContainsSpecificSection(String browserType) {
