@@ -16,6 +16,7 @@ import static com.it_academy.onliner.pageobject.OnlinerHomePage.getOnlinerUrl;
 
 public class OnlinerCatalogRemoteParallelTest {
     private final OnlinerHomePage onlinerHomePage = new OnlinerHomePage();
+
     @Disabled
     @ParameterizedTest
     @CsvSource(value = {"chrome", "edge", "firefox"})

@@ -22,7 +22,7 @@ public class CatalogComputerAndNetworksSectionTest extends BaseTest {
         collection.add("Ноутбуки, компьютеры, мониторы");
         collection.add("Комплектующие");
         collection.add("Хранение данных");
-        collection.add("Сетевое оборудование");
+        collection.add("qwerqeqweqwe");
         return collection;
     }
 
